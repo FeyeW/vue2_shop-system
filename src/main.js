@@ -2,19 +2,22 @@
 import Vue from 'vue'
 //引入App
 import App from './App.vue'
-//引入VueRouter
-import VueRouter from 'vue-router'
-//引入路由器
-import router from './router'
+import router from './router/index'
+
+import './assets/fonts/iconfont'
+import '../public/css/global.css'
+
+import axios from 'axios'
+axios.defaults.baseURL = 'http://127.0.0.1:8888/api/private/v1/'
+Vue.prototype.$http = axios
 
 //关闭Vue的生产提示
 Vue.config.productionTip = false
-//应用插件
-Vue.use(VueRouter)
+
 
 //创建vm
 new Vue({
-	el:'#app',
-	render: h => h(App),
-	router:router
+    router,
+    el: '#app',
+    render: h => h(App),
 })
