@@ -6,6 +6,7 @@ import router from './router/index'
 
 import './assets/fonts/iconfont.css'
 import '../public/css/global.css'
+import TreeTabel from 'vue-table-with-tree-grid'
 
 import axios from 'axios'
 //配置请求的跟路径
@@ -20,6 +21,7 @@ Vue.prototype.$http = axios
 //关闭Vue的生产提示
 Vue.config.productionTip = false
 
+Vue.component('tree-table', TreeTabel)
 
 //创建vm
 new Vue({

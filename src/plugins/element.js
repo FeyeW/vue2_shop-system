@@ -28,7 +28,8 @@ import {
     Tag,
     Tree,
     Select,
-    Option
+    Option,
+    Cascader
 } from 'element-ui'
 
 
@@ -59,6 +60,7 @@ Vue.use(Tag)
 Vue.use(Tree)
 Vue.use(Select)
 Vue.use(Option)
+Vue.use(Cascader)
     //在Vue的原型上写一个方法 
 Vue.prototype.$message = Message
 Vue.prototype.$confirm = MessageBox.confirm

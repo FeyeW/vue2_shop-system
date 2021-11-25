@@ -70,6 +70,9 @@
         <el-button type="primary" @click="allotRights">确 定</el-button>
       </span>
     </el-dialog>
+
+    <!-- 添加用户的对话框 -->
+    
   </div>
 </template>
 
