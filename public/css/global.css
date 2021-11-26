@@ -36,3 +36,7 @@ body,
 .input-new-tag {
     width: 120px;
 }
+
+.ql-editor {
+    min-height: 300px;
+}

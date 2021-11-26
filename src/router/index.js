@@ -9,6 +9,8 @@ import Rights from '../components/power/Rights'
 import Roles from '../components/power/Roles'
 import Cates from '../components/goods/Cates'
 import Params from '../components/goods/Params'
+import List from '../components/goods/List'
+import Add from '../components/goods/Add'
 
 Vue.use(Router);
 //创建并暴露一个路由器
@@ -48,6 +50,14 @@ const router = new Router({
                 {
                     path: '/params',
                     component: Params
+                },
+                {
+                    path: '/goods',
+                    component: List
+                },
+                {
+                    path: '/goods/add',
+                    component: Add
                 }
             ]
         }
