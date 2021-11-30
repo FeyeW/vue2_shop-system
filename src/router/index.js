@@ -11,6 +11,7 @@ import Cates from '../components/goods/Cates'
 import Params from '../components/goods/Params'
 import List from '../components/goods/List'
 import Add from '../components/goods/Add'
+import Order from '../components/order/Order'
 
 Vue.use(Router);
 //创建并暴露一个路由器
@@ -58,6 +59,10 @@ const router = new Router({
                 {
                     path: '/goods/add',
                     component: Add
+                },
+                {
+                    path: '/orders',
+                    component: Order
                 }
             ]
         }
